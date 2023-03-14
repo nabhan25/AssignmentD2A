@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2b</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* margin, padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* <!-- Base WB - W814px, H1025px --> */
+      .BaseBG {
+        height: 936px;
+        width: 1611px;
+        background-color: #1e1f2f;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .BigTittle {
+        height: 400px;
+        width: 800px;
+        align-items: center;
+        position: absolute;
+        font-size: 156px;
+        top: 301px;
+        left: 130px;
+        display: flex;
+        font-style: normal;
+        font-family: "Bebas Neue";
+        color: white;
+        z-index: 3;
+      }
+
+      .TopTittle {
+        height: 96px;
+        width: 331px;
+        align-items: center;
+        position: absolute;
+        font-size: 96px;
+        top: 125px;
+        left: 261.54px;
+        display: flex;
+        font-style: normal;
+        font-family: "Bebas Neue";
+        color: white;
+      }
+
+      .Qty {
+        width: 196px;
+        height: 48px;
+
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 64px;
+        line-height: 40px;
+        /* or 62% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        /* $color-font-white */
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 789px;
+        left: 206px;
+        position: absolute;
+        z-index: 3;
+      }
+
+      .Time {
+        width: 196px;
+        height: 48px;
+
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 64px;
+        line-height: 40px;
+        /* or 62% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        /* $color-font-white */
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 789px;
+        left: 550px;
+        position: absolute;
+      }
+
+      .BigWhite {
+        box-sizing: border-box;
+        position: absolute;
+        width: 504px;
+        height: 618px;
+        left: 957px;
+        top: 166px;
+        border: 60px solid #ffffff;
+        z-index: 3;
+      }
+
+      .BigRed {
+        box-sizing: border-box;
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        left: 1089px;
+        top: 305px;
+        /* $color-primary-base */
+        border: 40px solid #e82c4f;
+        z-index: 2;
+      }
+
+      .BtmBorder {
+        box-sizing: border-box;
+        position: absolute;
+        width: 558px;
+        height: 644px;
+        left: 691px;
+        top: 385px;
+        border: 60px solid #2d2f48;
+        z-index: 1;
+      }
+
+      .SmallWhite {
+        box-sizing: border-box;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1169px;
+        top: 385px;
+
+        border: 20px solid #ffffff;
+        z-index: 3;
+      }
+
+      .SqWhite {
+        position: absolute;
+        width: 31.06px;
+        height: 27.42px;
+        left: 130px;
+        top: 152.42px;
+        background: #ffffff;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+
+      .SqRed {
+        position: absolute;
+        width: 60.47px;
+        height: 68.55px;
+        left: 161.07px;
+        top: 179.87px;
+        /* $color-primary-base */
+        background: #e82c4f;
+        /* transform: matrix(1, 0, 0, -1, 0, 0); */
+        font-family: "Bebas Neue";
+        font-size: 64px;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+
+      .SqRedTxt {
+        position: absolute;
+        width: 28.31px;
+        height: 33.37px;
+        left: 177.81px;
+        top: 203.41px;
+        font-size: 50px;
+        justify-content: center;
+        color: white;
+      }
+
+      .SqBlue {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1089px;
+        top: 585px;
+
+        border: 20px solid #3256a1;
+      }
+
+      .WhiteCircle {
+        box-sizing: border-box;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1249px;
+        top: 585px;
+        border: 20px solid #ffffff;
+        border-radius: 100px;
+      }
+
+      .TimeImg {
+        position: absolute;
+        top: 793px;
+        left: 484px;
+      }
+
+      .PeopleImg {
+        position: absolute;
+        top: 796px;
+        left: 140px;
+      }
+
+      .TopRightBox {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 558px;
+        height: 644px;
+        left: 1169px;
+        top: -179px;
+
+        border: 60px solid #48596d;
+      }
+
+      /* $color-font-white */
+    </style>
+  </head>
+  <body>
+    <div class="BaseBG">
+      <div class="BigTittle">LOREM IPSUM NEQUE PORRO</div>
+      <div class="TopTittle">WARMUPS</div>
+      <div class="Qty">10 MAX.</div>
+      <div class="Time">20MIN</div>
+      <div class="BigWhite"></div>
+      <div class="BigRed"></div>
+      <div class="BtmBorder"></div>
+      <div class="SmallWhite"></div>
+      <div class="SqWhite"></div>
+      <div class="SqRed">R</div>
+      <div class="SqRedTxt"></div>
+      <div class="SqBlue"></div>
+      <div class="WhiteCircle"></div>
+      <img src="Time2b.jpg" ; class="TimeImg" ; />
+      <img src="People2b.jpg" ; class="PeopleImg" ; />
+      <div class="TopRightBox"></div>
+    </div>
+  </body>
+</html>

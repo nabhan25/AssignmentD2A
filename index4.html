@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* INTERNAL STYLING */
+      /* Insert CSS here */
+      /* class */
+      *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+
+        
+      }
+      .parent {
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        position: relative;
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+
+        position: absolute;
+      }
+
+      /* top, left, right, bottom */
+      .child1 {
+        /* downward 0px */ /* right 0px */
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+        z-index: 3;
+      }
+
+      .child2 {
+        /* downward 0px */
+        /* right 0px */
+        top: 50px;
+        left: 50px;
+        background-color: blue;
+        z-index: 2;
+      }
+
+      .child3 {
+        /* downward 0px */
+        /* right 0px */
+        top: 100px;
+        left: 100px;
+        background-color: red;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Parent div 300 x300 , clour light blue -->
+    <!-- children five 100 x 100, colour blue x 3 -->
+    <!-- Inline style -->
+    <div class="parent">
+      <!-- DRY: Do not repeat -->
+      <!-- Position -->
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+    </div>
+  </body>
+</html>
